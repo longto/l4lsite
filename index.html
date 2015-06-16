@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html ng-app="myApp">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src= "js/angular.min.js"></script>
 	<script src= "js/ui-bootstrap-tpls-0.13.0.min.js"></script>
@@ -24,5 +24,39 @@
 			{firstName:'long',lastName:'to'}]">
 			<p>The name is <span ng-bind="person[1].lastName"></span></p>
 		</div>
+		<div ng-app="" ng-init="names=[
+			{name:'Jani',country:'Norway'},
+			{name:'Hege',country:'Sweden'},
+			{name:'Kai',country:'Denmark'}]">
+			<ul>
+				<li ng-repeat="x	in names">
+					{{ x.name + ', ' + x.country }}
+				</li>
+			</ul>
+		</div>
+		<div ng-controller="costCtrl">
+			Quantity: <input type="number" ng-model="quantity">
+			Price: <input type="number" ng-model="price">
+			<p>Total = {{ (quantity * price) | currency }}</p>
+		</div>
+		<div ng-app="" ng-controller="customersCtrl">
+			<ul>
+				<li ng-repeat="x in names">
+					{{ x.Name + ', ' + x.Country }}
+				</li>
+			</ul>
+		</div>
+		<script>
+		var app = angular.module('myApp', []);
+		app.controller('costCtrl', function($scope) {
+		$scope.quantity = 1;
+		$scope.price = 9.99;
+		});
+		app.controller('customersCtrl', function($scope, $http) {
+		$http.get("http://www.w3schools.com/angular/customers.php")
+		.success(function(response) {$scope.names = response.records;});
+		});
+		
+		</script>
 	</body>
 </html>
