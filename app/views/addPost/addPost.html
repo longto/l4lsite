@@ -1,0 +1,43 @@
+<div ng-controller="AddPostCtrl">
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item " href="#">Home</a>
+                <a class="blog-nav-item active" href="addPost.html">Add Post</a>
+        </div>
+    </div>
+    <div class="container">
+        <form class="form-horizontal" ng-submit="AddPost()">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Create Post</legend>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-12 " for="txtTitle">Title</label>
+                    <div class="col-md-12">
+                        <input id="txtTitle" ng-model="article.title" name="txtTitle" type="text" placeholder="post title" class="form-control input-md">
+                    </div>
+                </div>
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-12 " for="txtPost">Post</label>
+                    <div class="col-md-12">
+                        <textarea ng-model="article.post" data-ck-editor id="txtPost" name="txtPost" placeholder="post content"></textarea>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-12 " for="singlebutton"></label>
+                    <div class="col-md-12">
+                        <input ng-disabled="!article.title || !article.post" id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Publish" />
+
+                        <input class="btn btn-default" type="button" value="Cancel" ng-click="cancelPost()"/>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="blog-footer">
+        <p>AngularJS & Firebase Blog App</p>
+    </div>
+</div>
