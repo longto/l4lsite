@@ -14,4 +14,10 @@ angular.module('myApp', [
             redirectTo: '/home'
         });
     }
-]);
+])
+.filter("htmlContent", ['$sce', function($sce) {
+  return function(htmlCode){
+    return $sce.trustAsHtml(htmlCode);
+  }
+}]);
+;
