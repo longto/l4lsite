@@ -19,5 +19,5 @@ angular.module('myApp', [
   return function(htmlCode){
     return $sce.trustAsHtml(htmlCode);
   }
-}]);
+}])
 ;
