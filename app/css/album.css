@@ -1,0 +1,55 @@
+.imageUpload {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    min-height: 80px;
+}
+
+.imageUpload a {
+    text-decoration: underline;
+    color: #00f;
+    cursor: pointer;
+}
+
+.imageUpload.dragover {
+    border-color: #0c0;
+}
+
+.imageUpload.dragover-err {
+    border-color: #c00;
+}
+
+.uploadStatus td {
+    padding: 0 20px;
+}
+
+.progress-bar {
+    width: 100px;
+    position: relative;
+    height: 4px;
+    text-align: center;
+}
+
+.progress-bar .progress {
+    background-color: #ff0000;
+    width: 0%;
+}
+
+.l4lthumbnail{
+    background-color: #f0f0f0;
+    float: left;
+    width: 200px;
+    margin : 10px 0 0 10px;
+    padding: 5px;
+    text-align: center;
+}
+.l4lthumbnail .imagePreview {
+    max-width: 200px;
+    max-height: 200px;   
+}
+.l4lthumbnail input{
+    display: block;
+    margin: 10px auto;
+    border-top: 1px solid #ccc;
+}

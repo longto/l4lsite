@@ -2,69 +2,76 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
-  <link rel="icon" href="images/favicon.ico">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Learn for Life English center</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- html5 -->
-  <link rel="stylesheet" href="components/html5/css/normalize.css">
-  <link rel="stylesheet" href="components/html5/css/main.css">
-  <script src="components/html5/js/vendor/modernizr-2.8.3.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learn for Life English center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- html5 -->
+    <link rel="stylesheet" href="components/html5/css/normalize.css">
+    <link rel="stylesheet" href="components/html5/css/main.css">
+    <script src="components/html5/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
-  <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div ng-view></div>
-  <!-- In production use:
+    <div ng-view></div>
+    <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-
-  <!-- angular -->
-  <script src="components/angular/angular.min.js"></script>
-  <script src="components/angular/angular-route.min.js"></script>
-  <script src="components/angular/angular-animate.min.js"></script>
-  <script src="components/angular/angular-resource.min.js"></script>
-  <!-- firebase -->
-  <script src="components/firebase/firebase.js"></script>
-  <script src="components/firebase/angularfire.min.js"></script>
-  <!-- angular file upload -->
-  <script src="components/ng_file_upload/angular-file-upload-shim.min.js"></script>
-  <script src="components/ng_file_upload/angular-file-upload.min.js"></script>
-  <!-- cloudinary angular plugin -->
-  <script src="components/ng_cloudinary/angular.cloudinary.js"></script>  
-  <!-- version -->
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
-  <!-- bootstrap -->
-  <script src="components/jquery/jquery-2.0.1.min.js"></script>
-  <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">  
-  <script src="components/bootstrap/js/bootstrap.min.js"></script>
-  <!-- ladda -->
-  <script src="components/ladda/spin.min.js"></script>
-  <script src="components/ladda/ladda.min.js"></script>
-  <link href="components/ladda/ladda-themeless.min.css" rel="stylesheet">
-  <!-- ckeditor -->    
-  <script src="components/ckeditor/ckeditor.js"></script> 
-  
-
-  <!-- controller -->
-  <script src="app.js"></script>
-  <script src="services/sessionService.js"></script>
-  <script src="views/home/home.js"></script>
-  <script src="views/register/register.js"></script>
-  <script src="views/welcome/welcome.js"></script>
-  <script src="views/addPost/addPost.js"></script>
-  <!-- custom css -->
-  <link rel="stylesheet" href="css/app.css">
-  <link href="css/signin.css" rel="stylesheet">
-  <link href="css/justified-nav.css" rel="stylesheet">
-  <link href="css/blog.css" rel="stylesheet">
-
+    <!-- jquery -->
+    <script src="components/jquery/jquery.js"></script>
+    <!-- angular -->
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular/angular-route.min.js"></script>
+    <script src="components/angular/angular-animate.min.js"></script>
+    <script src="components/angular/angular-resource.min.js"></script>
+    <!-- firebase -->
+    <script src="components/firebase/firebase.js"></script>
+    <script src="components/firebase/angularfire.min.js"></script>
+    <!-- cloudinary angular plugin -->
+    <script src="components/ng_cloudinary/jquery.cloudinary.js"></script>
+    <script src="components/ng_cloudinary/angular.cloudinary.js"></script>
+    <script src="components/ng_cloudinary/config.js"></script>
+    <!-- angular file upload -->
+    <script src="components/ng_file_upload/angular-file-upload-shim.min.js"></script>
+    <script src="components/ng_file_upload/angular-file-upload.min.js"></script>
+    <!-- version -->
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+    <!-- bootstrap -->
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ladda -->
+    <script src="components/ladda/spin.min.js"></script>
+    <script src="components/ladda/ladda.min.js"></script>
+    <link href="components/ladda/ladda-themeless.min.css" rel="stylesheet">
+    <!-- ckeditor -->
+    <script src="components/ckeditor/ckeditor.js"></script>
+    <!-- controller -->
+    <script src="app.js"></script>
+    <script src="services/sessionService.js"></script>
+    <script src="views/home/home.js"></script>
+    <script src="views/register/register.js"></script>
+    <script src="views/welcome/welcome.js"></script>
+    <script src="views/addPost/addPost.js"></script>
+    <script src="views/album/albumControllers.js"></script>
+    <script src="views/album/albumServices.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/justified-nav.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/album.css" rel="stylesheet">
 </body>
+
 </html>

@@ -6,7 +6,9 @@ angular.module('myApp', [
     'myApp.home',
     'myApp.register',
     'myApp.welcome',
-    'myApp.addPost'
+    'myApp.addPost',
+    'albumControllers',
+    'albumServices'
 ])
 .config(['$routeProvider',
     function($routeProvider) {
