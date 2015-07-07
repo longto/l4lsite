@@ -10,7 +10,11 @@ angular.module('directivesFrontEnd',[])
       };    
       return {
           restrict: 'EA', //Default for 1.3+
-          scope : { data : '=' },
+          scope : { 
+            data : '=', 
+            editpost : '&', 
+            deletepost : '&' 
+          },
           controller: controller,
           controllerAs: 'vm',
           bindToController: true, //required in 1.3+ with controllerAs

@@ -4,8 +4,8 @@
 		<p class="list-group-item-text" ng-bind-html="article.post | htmlContent"></p>
 
 		<span class="pull-right">
-			<button class="btn btn-xs btn-info" ng-click="editPost(article.$id)" data-target="#editModal">EDIT</button>
-			<button class="btn btn-xs btn-warning" ng-click="confirmDelete(article.$id)" data-target="#deleteModal" >DELETE</button>
+			<button class="btn btn-xs btn-info" ng-click="editpost(article.$id)" data-target="#editModal">EDIT</button>
+			<button class="btn btn-xs btn-warning" ng-click="deletepost(article.$id)" data-target="#deleteModal" >DELETE</button>
 		</span>
 	</a>
 </div>
