@@ -51,5 +51,30 @@ angular.module('myApp.welcome', ['ngRoute'])
                     console.log("Error:", error);
                 });
             }
-        }
-    ]);
+        }])
+    
+    .directive('news', function () {
+      
+      var controller = function () {
+          
+              var vm = this;
+          
+              function init() {
+                //vm.dataStore = angular.copy(vm.datasource);               
+              }
+              
+              init();
+              
+              
+      };    
+      
+         
+      return {
+          restrict: 'EA', //Default for 1.3+
+          controller: controller,
+          controllerAs: 'vm',
+          bindToController: true, //required in 1.3+ with controllerAs
+          templateUrl: 'views/welcome/newsTemplate.html'
+      };
+  });
+

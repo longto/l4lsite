@@ -1,0 +1,11 @@
+<div class="list-group" ng-repeat="article in articles">
+	<a href="#" onclick="return false;" class="list-group-item active">
+		<h4 class="list-group-item-heading">{{article.title}}</h4>
+		<p class="list-group-item-text" ng-bind-html="article.post | htmlContent"></p>
+
+		<span class="pull-right">
+			<button class="btn btn-xs btn-info" ng-click="editPost(article.$id)" data-target="#editModal">EDIT</button>
+			<button class="btn btn-xs btn-warning" ng-click="confirmDelete(article.$id)" data-target="#deleteModal" >DELETE</button>
+		</span>
+	</a>
+</div>
