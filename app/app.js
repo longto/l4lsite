@@ -8,7 +8,8 @@ angular.module('myApp', [
     'myApp.welcome',
     'myApp.addPost',
     'albumControllers',
-    'albumServices'
+    'albumServices',
+    'directivesFrontEnd'
 ])
 .config(['$routeProvider',
     function($routeProvider) {

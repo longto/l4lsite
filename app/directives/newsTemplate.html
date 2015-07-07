@@ -1,4 +1,4 @@
-<div class="list-group" ng-repeat="article in articles">
+<div class="list-group" ng-repeat="article in data">
 	<a href="#" onclick="return false;" class="list-group-item active">
 		<h4 class="list-group-item-heading">{{article.title}}</h4>
 		<p class="list-group-item-text" ng-bind-html="article.post | htmlContent"></p>
